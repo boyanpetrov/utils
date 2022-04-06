@@ -1,0 +1,23 @@
+{
+  "name": "@boyanptrv/utils",
+  "version": "1.0.0",
+  "description": "Utility library",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boyanpetrov/utils.git"
+  },
+  "keywords": [
+    "utils",
+    "helpers"
+  ],
+  "author": "Boyan Petrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boyanpetrov/utils/issues"
+  },
+  "homepage": "https://github.com/boyanpetrov/utils#readme"
+}
