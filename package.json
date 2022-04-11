@@ -4,7 +4,11 @@
   "description": "Utility library",
   "main": "lib/index.js",
   "scripts": {
-    "test": "jest lib"
+    "test": "jest lib",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,9 @@
   },
   "homepage": "https://github.com/boyanpetrov/utils#readme",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
+    "prettier": "2.6.2"
   }
 }
