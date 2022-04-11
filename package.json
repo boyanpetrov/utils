@@ -5,10 +5,18 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest lib",
+    "lint": "eslint lib/** --quiet --ext .js",
+    "lint:fix": "yarn lint --fix",
+    "prettier": "prettier --check lib",
+    "prettier:fix": "prettier --write --ignore-unknown lib",
+    "format": "yarn lint:fix && yarn prettier:fix",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*.{js,jsx}": [
+      "yarn lint:fix",
+      "yarn prettier:fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -25,6 +33,9 @@
   },
   "homepage": "https://github.com/boyanpetrov/utils#readme",
   "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.4",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.7",
