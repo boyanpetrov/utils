@@ -4,7 +4,7 @@
   "description": "Utility library",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest lib"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/boyanpetrov/utils/issues"
   },
-  "homepage": "https://github.com/boyanpetrov/utils#readme"
+  "homepage": "https://github.com/boyanpetrov/utils#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
