@@ -8,13 +8,18 @@
     },
     "extends": [
         "eslint:recommended",
-        "prettier"
+        "prettier",
+        "plugin:@typescript-eslint/recommended"
     ],
-    "plugins": ["jest"],
+    "plugins": ["jest", "@typescript-eslint"],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "rules": {
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/consistent-type-definitions": ["error", "type"],
         "indent": [
             "error",
             2
