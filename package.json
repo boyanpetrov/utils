@@ -30,7 +30,7 @@
     "helpers"
   ],
   "author": "Boyan Petrov",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/boyanpetrov/utils/issues"
   },
