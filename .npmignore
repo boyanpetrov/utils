@@ -1,0 +1,7 @@
+*.log
+.DS_Store
+node_modules
+src
+coverage
+tsconfig.json
+tsup.config.ts
